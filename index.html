@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Tushar Ahmmed">
+    <meta name="description" content="Js Calculator using Vanilla JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calco - DOM Product</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-purple-100 to-indigo-200">
+    <header>
+        <section class="mt-8 mx-4">
+            <div class="md:w-1/4 sm:w-2/4 mx-auto shadow-2xl bg-gradient-to-b from-indigo-400 to-indigo-500 rounded-lg p-4">
+                <div class="header h-20 py-2 px-6 text-2xl text-right text-white font-thin bg-gradient-to-b from-gray-800 to-gray-700 rounded-md">
+                    <div class="math-field"></div>
+                    <div class="result-field"></div>
+                </div>
+                <div class="body grid grid-cols-4 mt-4">
+                    <button id="ac" class="col-span-2 font-semibold	border-l border-t">AC</button>
+                    <button id="del" class="font-semibold border-t">DEL</button>
+                    <button class="operator border-t">÷</button>
+                    <button class="number border-l">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator">*</button>
+                    <button class="number border-l">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator">+</button>
+                    <button class="number border-l">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator">-</button>
+                    <button class="number border-l" id="dot">.</button>
+                    <button class="number">0</button>
+                    <button id="equal" class="col-span-2">=</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <script src="assets/script.js"></script>
+</body>
+</html>
