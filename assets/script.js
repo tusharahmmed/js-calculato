@@ -45,6 +45,10 @@ function buttonClicked(className) {
             if (btnValue == '.') {
                 btnValue = '0' + btnValue;
             }
+            // if it is devide btn
+            if (btnValue == '÷'){
+                btnValue = '/';
+            }
             // if result field not empty
             if (resultField.innerText != '') {
                 mathField.innerText = '';
@@ -61,7 +65,7 @@ function equalToclicked() {
         let mathString = mathField.innerText;
         let result = eval(mathString);
         // insert result in resultField
-        resultField.innerText = '= ' + result;
+        resultField.innerText = '= ' + result.toFixed(11);
     })
 
 }
